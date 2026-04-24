@@ -240,10 +240,10 @@
       width: 52px; height: 52px; border-radius: 14px;
       background: rgba(29,185,84,.1); border: 1px solid rgba(29,185,84,.2);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; margin-bottom: 20px;
+      font-size: 1.5rem; margin-bottom: 10px;
     }
     .service-card h3 {
-      font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem;
+      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.1rem;
       margin-bottom: 12px; color: var(--white);
     }
     .service-card p { color: var(--gray); font-size: .9rem; line-height: 1.6; margin-bottom: 18px; }
@@ -536,7 +536,7 @@
 
     <div class="service-card reveal">
       <div style="margin-bottom:20px;animation:fadeUp .7s ease both;">
-     <img src="images/pm.png" alt="pm" style="height:200px;width:auto;object-fit:contain;filter:drop-shadow(0 4px 24px rgba(29,185,84,.3));" /> </a>
+     <img src="images/pm2.png" alt="pm" style="height:200px;width:auto;object-fit:contain;filter:drop-shadow(0 4px 24px rgba(29,185,84,.3));" /> </a>
   </div>
       <div class="service-icon">🛠️</div>
       <h3>Servicios Transversales</h3>
@@ -619,7 +619,7 @@
       <div class="contact-ico">📍</div>
       <div>
         <h4>Ubicación</h4>
-        <p>Colombia</p>
+        <p>Carrera 10 Bis #17-76 Sur, Bogotá D.C., Colombia</p>
       </div>
     </div>
   </div>
@@ -669,7 +669,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">IC <span>TIC</span> — Ingeniería Colombiana de Tecnologías de la Información y la Comunicación</div>
-  <p>© 2026 IC TIC · www.ictic.com · </p>
+  <p>© 2026 IC TIC · www.ictic.tech · </p>
 </footer>
 
 <!-- WhatsApp FAB -->
@@ -710,8 +710,10 @@
     const name = document.querySelector('input[placeholder="Tu nombre"]').value || '';
     const company = document.querySelector('input[placeholder="Tu empresa"]').value || '';
     const service = document.querySelector('select').value || '';
+    const email = document.querySelector('input[placeholder="correo@empresa.com"]').value || '';
+    const phone = document.querySelector('input[placeholder="+57 300 000 0000"]').value || '';
     const msg = document.querySelector('textarea').value || '';
-    const text = `Hola IC TIC, mi nombre es *${name}* de *${company}*. Estoy interesado en: *${service}*. ${msg}`;
+    const text = `Hola IC TIC, mi nombre es *${name}* de *${company}*. Estoy interesado en: *${service}*. ${msg}. Mi correo electrónico es *${email}* y mi número de teléfono es *${phone}*`;
     window.open(`https://wa.me/573017831533?text=${encodeURIComponent(text)}`, '_blank');
   }
 </script>
